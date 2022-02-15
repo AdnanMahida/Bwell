@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#B3B3B3"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView" />
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="#B3B3B3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/btnDetails"
+        app:layout_constraintStart_toEndOf="@+id/imgProfile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/btnDetails"
+        app:layout_constraintStart_toEndOf="@+id/imgProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtName">
+
+        <TextView
+            android:id="@+id/txtDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B3B3B3"
+            android:drawablePadding="@dimen/TextViewStyle"
+            app:drawableTint="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/txtSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#B3B3B3"
+            android:drawablePadding="@dimen/TextViewStyle"
+            app:drawableTint="@color/purple_200" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#B3B3B3"
+            android:drawablePadding="@dimen/TextViewStyle"
+            android:maxLines="3"
+            app:drawableTint="@color/purple_200" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:background="#B3B3B3"
+        android:backgroundTint="#B3B3B3"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="                        "
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#B3B3B3"
+        android:drawablePadding="@dimen/TextViewStyle"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnDetails"
+        app:layout_constraintTop_toBottomOf="@+id/btnDetails" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#B3B3B3"
+        android:drawablePadding="@dimen/TextViewStyle"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="@+id/txtTime"
+        app:layout_constraintStart_toStartOf="@+id/txtTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        android:src="#B3B3B3"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="@+id/txtPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

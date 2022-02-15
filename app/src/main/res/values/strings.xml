@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Bwell</string>
+    <string name="bookings">Bookings</string>
+    <string name="details">Details</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="contact">Contact</string>
+    <string name="book">Book</string>
+    <string name="bio">Bio</string>
+    <string name="more">More</string>
 </resources>
